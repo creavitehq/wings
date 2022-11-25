@@ -206,7 +206,7 @@ func (e *Environment) Create() error {
 
 			if _, err := e.client.NetworkCreate(ctx, networkName, types.NetworkCreate{
 				Driver:     "bridge",
-				EnableIPv6: false,
+				EnableIPv6: true,
 				Internal:   false,
 				Attachable: false,
 				Ingress:    false,
